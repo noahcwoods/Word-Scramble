@@ -1,0 +1,68 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Word Scramble Game</h1>
+
+    <div class="difficulty-selector">
+      <label for="difficulty">Select Difficulty:</label>
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+    </div>
+
+    <div class="scrambled-word" id="scrambledWord">_ _ _ _ _</div>
+
+    <div class="guess-input">
+      <input type="text" id="guessInput" placeholder="Your guess...">
+      <button id="guessSubmitBtn">Submit</button>
+    </div>
+
+    <div class="guesses">
+      <h3>Your Guesses:</h3>
+      <ul id="guessList"></ul>
+    </div>
+
+    <!-- Correct Guesses Counter -->
+    <div class="correct-guesses">
+      <h3>Correctly Guessed Words:</h3>
+      <div id="correctGuessCount">0</div>
+    </div>
+
+    <div class="message" id="guessResult"></div>
+
+    <div class="result-screen" id="resultScreen" style="display:none;">
+      <div id="resultMessage">TEST</div>
+      <button id="restartGameBtn">Play Again</button>
+    </div>
+
+  </div>
+  <script src="js/app.js" type="module"></script>
+
+</body>
+
+</html>
