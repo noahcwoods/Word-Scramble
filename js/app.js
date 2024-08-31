@@ -45,7 +45,7 @@ async function updateWord(){
 //calls the checkWinner function
 //display win/incorrect message to user
 guessSubmitBtn.addEventListener('click', async function () {
-    player.currentGuess = playerGuess.value;
+    player.currentGuess = playerGuess.value.trim();
     playerGuess.value = "";
 
     if (await checkCurrentGuess(player)){

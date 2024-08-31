@@ -45,7 +45,7 @@ export async function randomizeWord(decryptedWord) {
 
 //API call to grab a random word of length determined by difficulty
 export async function createNewWord(difficulty) {
-  const wordLength = difficulty === 'easy' ? 5 : difficulty === 'medium' ? 10 : 15;
+  const wordLength = difficulty === 'easy' ? 3 : difficulty === 'medium' ? 5 : 8;
 
   const apiHost = 'https://random-word-api.herokuapp.com/word';
   const apiCall = apiHost + `?length=${wordLength}`;
