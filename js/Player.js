@@ -32,7 +32,7 @@ class Player {
 
 //true if the guess matches the decrypted (unscrambled) word
 export async function checkWinner(decryptedWord, player) {
-  return player.currentGuess === decryptedWord;
+  return player.currentGuess.toLowerCase() === decryptedWord;
 }
 
 //Checks the current guess against all previous guests

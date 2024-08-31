@@ -6,6 +6,7 @@ const difficultySelector = document.getElementById('difficulty');
 const displayWord = document.getElementById('scrambledWord');
 const playerGuess = document.getElementById('guessInput');
 const guessSubmitBtn = document.getElementById('guessSubmitBtn');
+const newWordBtn = document.getElementById('newWordBtn');
 const guessListUl = document.getElementById('guessList');
 const guessResult = document.getElementById('guessResult');
 const correctGuessCount = document.getElementById('correctGuessCount');
@@ -63,6 +64,11 @@ guessSubmitBtn.addEventListener('click', async function () {
       }
     }
 });
+
+//provides new word if requested
+newWordBtn.addEventListener('click', async function () {
+  reset();
+})
 
 //display list of current guesses
 function displayGuesses(){

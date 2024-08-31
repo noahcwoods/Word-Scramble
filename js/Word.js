@@ -39,7 +39,7 @@ class Word {
 //takes a word and scrambles it
 export async function randomizeWord(decryptedWord) {
   decryptedWord = decryptedWord.split("");
-  decryptedWord = decryptedWord.sort((b,a) => (Math.random() - 0.5));
+  decryptedWord = decryptedWord.sort(() => (Math.random() - 0.5));
   return decryptedWord.join('');
 }
 
